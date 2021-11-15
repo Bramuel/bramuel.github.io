@@ -5,5 +5,7 @@ function enter(){
     document.location.href = "Calculator.html"
   }else if(sum == "SA"){
     document.location.href = "SA.html"
+  }else if(sum == "Ans"){
+    document.location.href = "Ans.html"
   }
 }
