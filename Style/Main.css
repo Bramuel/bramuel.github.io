@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+div {
+  margin : 0;
+  padding : 0;
+}
+
+.menu {
+  background-color: gray;
+  text-align: center;
+}
+
+.menu ul {
+  display: inline-flex;
+  list-style: none;
+  color : #FFFFFF
+}
+
+.menu ul li {
+  width : 120px;
+  margin : 15px;
+  padding: 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color : #fff;
+}
+
+.active , .menu ul li:hover {
+  background-color: #3B3B43FC;
+  border-radius: 3px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: gray;
+  margin-top: 15px;
+  margin-left : -15px;
+}
+
+.menu ul li:hover .sub-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu ul li:hover .sub-menu ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.sub-menu1{
+  display: none;
+}
+
+.sub-menu ul li:hover .sub-menu1{
+  margin-top: -20px;
+  margin-left: 140px;
+  display: block;
+  position: absolute;
+  background: gray;
+}
+
+select {
+  border: 0;
+  font-size: 0.5rem;
+  padding : 3em 5em;
+  background-color: #505353;
+  appearance: none;
+  box-shadow: 0 10px 25px #000000;
+}
+
+option {
+  appearance:none;
+  padding : 10px 15px;
+}
+
+#special {
+  background-color: transparent;
+  border-radius: 2px;
+  outline: none;
+  border: 6px solid black;
+  padding: 5px 15px;
+}
+
+#special:hover {
+  background-color: green;
+  border: 6px solid red;
+}
+
+input {
+  appearance: none;
+  padding : 10px 15px;
+}
